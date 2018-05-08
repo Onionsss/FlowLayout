@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flow_backgroundRes" format="reference"/>
+        <attr name="flow_paddingLeft" format="dimension"/>
+        <attr name="flow_paddingRight" format="dimension"/>
+        <attr name="flow_paddingBottom" format="dimension"/>
+        <attr name="flow_paddingTop" format="dimension"/>
+        <attr name="flow_marginTop" format="dimension"/>
+        <attr name="flow_marginLeft" format="dimension"/>
+        <attr name="flow_marginRight" format="dimension"/>
+        <attr name="flow_marginBottom" format="dimension"/>
+        <attr name="flow_textSize" format="dimension"/>
+        <attr name="flow_textColor" format="color"/>
+    </declare-styleable>
+</resources>
