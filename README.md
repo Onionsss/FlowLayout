@@ -23,5 +23,10 @@ val data = mutableListOf("梦幻西游","魔兽世界","京东","美团","饿了
           ,"我的世界","360应用市场","美国之心","Windows","呵呵呵")
   flow.setData(data)
   flow.start()
+  flow.flowListener = object : FlowClickListener{
+           override fun onClick(title: String, position: Int) {
+               Toast.makeText(this@MainActivity,"$title-$position",Toast.LENGTH_LONG).show()
+           }
+       }
 ```
 ![image](https://github.com/Onionsss/FlowLayout/blob/master/images/bh.png)
