@@ -12,6 +12,10 @@
         android:id="@+id/flow"
         android:background="@color/colorPrimary"
         app:flow_textColor="#ffffff"
+        app:flow_textSize="14sp"
+        app:flow_backgroundRes="@drawable/select"
+        app:flow_marginLeft="10dp"
+        app:flow_paddingLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

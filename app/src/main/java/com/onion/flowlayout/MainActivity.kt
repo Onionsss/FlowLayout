@@ -14,12 +14,5 @@ class MainActivity : AppCompatActivity() {
                 ,"我的世界","360应用市场","美国之心","Windows","呵呵呵")
         flow.setData(data)
         flow.start()
-        flow.postDelayed({
-//            data.addAll(data)
-//            flow.setData(data)
-//            flow.start()
-        },3000)
-
-
     }
 }
