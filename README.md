@@ -24,4 +24,4 @@ val data = mutableListOf("梦幻西游","魔兽世界","京东","美团","饿了
   flow.setData(data)
   flow.start()
 ```
-![image](https://github.com/Onionsss/Custom_Tab/blob/master/imgae/r.gif)
+![image](https://github.com/Onionsss/FlowLayout/blob/master/imgaes/bh.png)
