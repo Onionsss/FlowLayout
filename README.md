@@ -1,4 +1,5 @@
 # FlowLayout
+ [ ![Download](https://api.bintray.com/packages/zhangqiaa/maven/FlowLayout/images/download.svg) ](https://bintray.com/zhangqiaa/maven/FlowLayout/_latestVersion)
 
 ```
 xml
