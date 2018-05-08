@@ -23,6 +23,7 @@ class FlowLayout(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : V
 
     private var mTitles: ArrayList<String> = arrayListOf()
 
+    var flowListener: FlowClickListener? = null
     private var mWidth = 0
     private var mHeight = 0
 
@@ -62,9 +63,9 @@ class FlowLayout(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : V
     }
 
     fun start(){
-        mTitles.forEach {
+        mTitles.forEachIndexed { index,value ->
             var tv = TextView(context)
-            tv.text = it
+            tv.text = value
             tv.gravity = Gravity.CENTER
             var mar = MarginLayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT)
             mar.leftMargin = mMarginLeft
@@ -77,6 +78,12 @@ class FlowLayout(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : V
             tv.setTextColor(mTextColor)
             tv.setTextSize(TypedValue.COMPLEX_UNIT_PX,mTextSize.toFloat())
             tv.isClickable = true
+
+            tv.setOnClickListener {
+                flowListener?.let {
+                    flowListener?.onClick(value,index)
+                }
+            }
             addView(tv)
         }
         requestLayout()
