@@ -1,6 +1,9 @@
 # FlowLayout
- [ ![Download](https://api.bintray.com/packages/zhangqiaa/maven/FlowLayout/images/download.svg) ](https://bintray.com/zhangqiaa/maven/FlowLayout/_latestVersion)
+ [ ![FlowLayout](https://api.bintray.com/packages/zhangqiaa/maven/FlowLayout/images/download.svg) ](https://bintray.com/zhangqiaa/maven/FlowLayout/_latestVersion)
+```
+依赖方式  implementation 'com.onion.flow:FlowLayout:1.0.0'
 
+```
 ```
 xml
 ```
